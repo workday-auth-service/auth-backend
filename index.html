@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp Україна | HR Портал</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: #1a202c;
+            font-size: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: #e6fffa;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+        
+        .feature-title {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .feature-desc {
+            color: #718096;
+            font-size: 14px;
+        }
+        
+        .enter-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .enter-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .security {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .security-title {
+            color: #22543d;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .security-text {
+            color: #2f855a;
+            font-size: 14px;
+        }
+        
+        .footer {
+            color: #a0aec0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">TC</div>
+        
+        <h1>Workday HR Portal</h1>
+        <p class="subtitle">
+            Офіційний портал TechCorp Україна<br>
+            Інтегрована система подачі заявок Workday
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-title">Безпека</div>
+                <div class="feature-desc">Захист даних GDPR</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">Швидкість</div>
+                <div class="feature-desc">Миттєва обробка</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌍</div>
+                <div class="feature-title">Глобально</div>
+                <div class="feature-desc">Workday інтеграція</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Мобільність</div>
+                <div class="feature-desc">Підтримка всіх пристроїв</div>
+            </div>
+        </div>
+        
+        <div class="security">
+            <div class="security-title">🔐 Захищене з'єднання</div>
+            <div class="security-text">
+                Ваші дані захищені сертифікатом SSL<br>
+                та обробляються згідно зі стандартами Workday
+            </div>
+        </div>
+        
+        <button class="enter-btn" onclick="enterPortal()">
+            🚀 Увійти в HR систему
+        </button>
+        
+        <div class="footer">
+            © 2024 TechCorp Україна | Партнер Workday<br>
+            Підтримка: hr@techcorp.com.ua
+        </div>
+    </div>
+    
+    <script>
+        function enterPortal() {
+            // ТВОЯ NGROK ССЫЛКА СЮДА:
+            window.location.href = 'https://orthogonal-herbaceously-nila.ngrok-free.dev';
+        }
+    </script>
+</body>
+</html>
