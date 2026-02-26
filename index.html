@@ -191,20 +191,8 @@
             // НОВАЯ NGROK ССЫЛКА:
             const ngrokUrl = 'https://orthogonal-herbaceously-nila.ngrok-free.dev';
             
-            // Сначала делаем fetch с правильными заголовками для ngrok
-            fetch(ngrokUrl, {
-                method: 'GET',
-                headers: {
-                    'ngrok-skip-browser-warning': 'true',
-                    'Host': 'orthogonal-herbaceously-nila.ngrok-free.dev'
-                }
-            }).then(response => {
-                // После успешного fetch делаем редирект
-                window.location.href = ngrokUrl;
-            }).catch(error => {
-                // Если fetch не сработал, все равно редиректим
-                window.location.href = ngrokUrl;
-            });
+            // Делаем редирект напрямую - без fetch с Host заголовком
+            window.location.href = ngrokUrl;
         }
     </script>
 </body>
